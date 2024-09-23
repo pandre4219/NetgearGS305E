@@ -1,0 +1,2 @@
+Hex Offset 001f:c000
+	MAC Address & Serialnumber
