@@ -5,6 +5,9 @@ Password: Password1!
 
 
 ----------------Tests----------------
+Too many wrong attemps lead to a tempoary timeout :)
+
+
 hash: 0a77e99019997eb5184d74d6f8f6e963
 Password: 1
 
