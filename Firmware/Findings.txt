@@ -1,2 +1,6 @@
 Hex Offset 001f:c000
 	MAC Address & Serialnumber
+
+Hex Offset 0X1D000
+	interesting numbers
+		header_chksum & payload_chksum

@@ -1,0 +1,2 @@
+Portected region 0: 0x000000-0x001000
+Portected region 1: 0x004000-0x01c000		Runs if Chksum fails

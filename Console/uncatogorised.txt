@@ -1,0 +1,22 @@
+=========================SPI FLASH VIEWER=============================
+    b: reboot
+    e <addr>: Erase flash with the address of <addr>
+    ev <addr>: Erase flash with the address of <addr> and then Verify
+    r <addr> <len>: read flash from the address of <addr> and then dump
+    c: check runtime kernel without boot
+    cb: check runtime kernel and boot if checksum is pass
+    h: print header
+    l: load runtime kernel
+    v: show verobose information
+    m: print this menu
+    q: quit from spi flash view
+>h
+    magic_number:  0x65358979
+    length:        0x000a5128 (676136)
+    header_chksum: 0x000005de
+    payload_chksum:0x0381b8da
+    reserved:      0x332255ff
+>v
+There 2 protected region(s).
+    Portected region 0: 0x000000-0x001000
+    Portected region 1: 0x004000-0x01c000
