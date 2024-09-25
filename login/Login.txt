@@ -1,0 +1,44 @@
+Logging in to the Web interface printes a hash (of the Password) into the Console
+Hash is md5
+ --> md5(Random Number + Passwort)
+		--> number origin currently unknown
+
+----------------First_Tests----------------
+Too many wrong attemps lead to a tempoary timeout :)
+
+Hash: 37176e279b77da4ad322bc723e98fae9
+Password: Password1!
+
+hash: 0a77e99019997eb5184d74d6f8f6e963
+Password: 1
+
+hash: 13ad240fca13ff284f06f5b813be0153
+Password: 1234
+
+---------------------Analyzing_html&js------------------
+Searching trough the html results in finding a the code:
+
+	function submitLogin()
+	{
+	    encryptPwd();
+		document.forms[0].submit();
+		return true;
+	}
+
+
+The definition of encryptPwd can be found in login.js:
+
+	function encryptPwd(){
+	    var password = document.getElementById("password").value;
+	    var randNum  = document.getElementById("rand").value;
+	    var resultStr = merge(password,randNum);
+	    document.getElementById("submitPwd").value = md5(resultStr);
+	}
+
+The Origion of rand is currently unknown
+
+
+
+
+
+
