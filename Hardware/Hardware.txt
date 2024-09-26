@@ -1,0 +1,13 @@
+1 CPU			RTL8367N
+2 Flash			W25Q16JV
+3 Buck Converter	LSC SP5525
+4 Power			12V 1A
+5 Reset			Reset Settings
+6-8 Chip		H40520MN
+9 Power LED
+10-14 RJ45
+15 Crystall		25.0
+16-18 Condebsator
+19-20 Screw hole 
+21 Unkown
+22 Serial Console Pins	
