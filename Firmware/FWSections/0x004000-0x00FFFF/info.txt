@@ -29,6 +29,7 @@ loader warm start
 
 0xB1E8-0xBDBB.html
 	web page which gets loaded when system has a checksum error
+	Firmware download mode
 	uploade FW and reboot
 	pictures not integraded yet need to patch
 	css missing
