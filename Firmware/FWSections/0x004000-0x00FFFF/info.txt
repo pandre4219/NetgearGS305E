@@ -1,0 +1,35 @@
+file contains:
+
+unidentified Code
+	no further anlizis yet
+
+Spi flash viewer
+	~ +0x00002260
+	no further anlizis yet
+
+loader warm start
+	~ +0x00008888
+	no further anlizis yet
+
+0xA27C-0xA693.png
+	deco picture
+
+0xA694-0xA926.png
+	custom picture
+	normaly would be larger and be the netgear logo
+
+0xADC1-0xAE83.gif
+	no clue maybe a paper
+
+0xAE84-0xAF3C.gif
+	also maybe a paper
+
+0xAF3D-0xAF6D.gif
+	literly 2 pixels no clue why
+
+0xB1E8-0xBDBB.html
+	web page which gets loaded when system has a checksum error
+	uploade FW and reboot
+	pictures not integraded yet need to patch
+	css missing
+	not realy analized yet
