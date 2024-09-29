@@ -34,3 +34,34 @@ loader warm start
 	pictures not integraded yet need to patch
 	css missing
 	not realy analized yet
+
+
+Downloaded the files for the page while it was running contains:
+	CBU_IMG_ContentVisual.gif
+		picture of the fancy decoration at the top
+
+	CBU_NgrLogo.png
+		custom logo i added
+
+	httpupg.cgi
+		was to lazy yet
+
+	index.html
+		the html file
+		needs to be run in root location for the references to work
+		may make a patched version later
+
+	loader.css
+		css file
+
+	reboot.cgi
+		was to lazy yet
+
+	tree.js
+		was to lazy yet
+
+
+
+
+
+

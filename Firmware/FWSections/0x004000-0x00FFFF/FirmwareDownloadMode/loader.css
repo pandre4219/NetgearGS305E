@@ -1,0 +1,215 @@
+body,div,table,td,h1,h2,p,ul,ol,li,em,span{
+margin: 0;
+padding: 0;
+}
+body.homebody {
+height: 100%;
+margin: 0px 25px 0px 25px;
+overflow: auto;
+min-width: 600px;
+min-height: 200px;
+}
+table.tableStyle {
+padding: 0px; 
+margin: 0px; 
+border-spacing: 0px; 
+border: 0px; 
+border-collapse: collapse; 
+width: 100%; 
+}
+.logoNetGear {
+background: url('CBU_NgrLogo.png') no-repeat bottom left;
+height: 20px;
+width: 138px;
+margin-top:25px;
+float:left;
+display:inline-block;
+z-index:1;
+}
+a{text-decoration:none;}
+.imgContentVisual{
+background: url('CBU_IMG_ContentVisual.gif') no-repeat top left;
+height:38px;
+width:462px;
+border: 0;
+z-index:2;
+margin-left:-65px;
+display:inline-block;
+float:left;
+}
+.fontProLg{
+font-size:12pt;
+font-family: Arial;
+font-weight:bold;
+color:#82786e;
+text-align:left;
+height: 12pt;
+line-height: 12pt;
+margin: 10px 0;
+}
+.topShadow {
+border-bottom: 1px solid #a7a7a7;
+height:1px;
+}
+.paddingBtnTopRight{
+padding: 5px 0 0 0;
+text-align:right;
+}
+select, input, legend {
+font-family: Arial;
+font-size:11pt;
+color:#666666;
+}
+input {
+border: 1px solid #cccccc;
+}
+#ButtonsDiv input{
+font-size:10pt;
+font-family:Arial;
+color: #ffffff;
+text-align: center;
+vertical-align: middle;
+height: 22px;
+line-height: 12pt;
+padding: 0 12px;
+*padding: 0 6px;
+_padding:0 6px;
+margin: 0 0 0 5px;
+cursor:pointer;
+}
+.buttonsOn{
+border: #00a1de 1px solid;
+background-color:#00a1de;
+}
+.buttonsOff{
+border: #82786f 1px solid;
+background-color:#82786f;
+}
+.topAlign {
+vertical-align: top;
+}
+.treeMenu{
+width: 180px;
+border: 1px solid #e7e5e4;
+background-color: #f9f8f8;
+}
+.treeMenu_L{
+width: 175px;
+margin: 7px 2px;
+overflow: hidden;
+}
+.treeMenu_L span.tree_word{
+float: left;
+margin-left: 10px;
+font-family: Arial;
+font-size: 10pt;
+cursor: pointer;
+}
+.treeMenu_L ul{
+width: 175px;
+float: left;
+}
+.treeMenu_L ul li{
+display: inline;
+float: left;
+width: 175px;
+clear: both;
+list-style: none;
+padding: 6px 0;
+border-bottom: 1px solid #F9F8F8;
+}
+.treeMenu_L ul li.clicked{
+background-color:#00a1de;
+}
+.treeMenu_L ul li a{
+width: 175px;
+display: block;
+height: 12pt;
+line-height: 12pt;
+color: #666666;
+}
+.treeMenu_L ul li a div.square{
+width: 3px;
+height: 3px;
+position: absolute;
+margin: 8px 3px 0 5px;
+font-size: 0px;
+background: #666666;
+}
+.treeMenu_L ul li.clicked a div.square{
+background: #ffffff;
+}
+.treeMenu_L ul li.clicked a .tree_word{
+color: #ffffff;
+}
+.treeMenu_L ul li.mouOv a div.square{
+background: #00a1de;
+}
+.treeMenu_L ul li.mouOu a div.square{
+background: #666666;
+}
+.treeMenu_L ul li.mouOv a .tree_word{
+color: #00a1de;
+}
+.treeMenu_L ul li.mouOu a .tree_word{
+color: #666666;
+}
+.detailsAreaContainer {
+width:100%;
+}
+.sec_header{
+border-bottom:1px solid #672e8f;
+padding-bottom:2px;
+height:12pt;
+}
+.sec_header span{
+float:left;
+height:12pt;
+}
+.tableTitleBottom{
+border-bottom:2px solid;
+border-bottom-color:#672e8f;
+*margin-bottom:-2px;
+}
+.font11purplebold{
+font-size:10pt;
+font-family:Arial;
+color:#672e8f;
+text-align:left;
+line-height:13px;
+}
+.leftAlign {
+text-align: left;
+}
+.paddingsubSectionBodyNone {
+padding: 5px 1px 6px 5px;
+text-align: left;
+}
+.font10Bold {
+font-size: 10pt;
+font-family: Arial;
+color:#666666;
+text-align:left;
+}
+.padding4Top{
+padding-top: 4px;
+}
+.font10 {
+color:#666666;
+font-size: 11pt;
+font-family: Arial;
+text-align:left;
+}
+.paddingTopLeft{
+padding-top: 4px;
+padding-left: 60px;
+}
+.footer{
+height:25px;
+line-height:25px;
+}
+.footer span.rights{
+font-size: 9pt;
+font-family: Arial;
+color:#b2a79f;
+}
