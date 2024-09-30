@@ -1,0 +1,36 @@
+ran the switch wit the bootloader only (onlyBootloader.bin) and installed a 
+fresh fw (GS305E_V1.0.0.16.bin) resulting in the file prettyCleanFW.bin
+i was able to locate where the parts of the fresh fw get placed by compairing the 3 files
+nothing realy spezial exept for the WebKitFormBoundary which gets send while
+sending the new fw to the switch. Folowing information were gained using burpsuit.
+
+
+
+
+POST /httpupg.cgi?cmd=fw_upgrade HTTP/1.1
+Host: 192.168.0.239
+Content-Length: 676369
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://192.168.0.239
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryu0MQXosZb2ERBSG0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.118 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Referer: http://192.168.0.239/httpupg.cgi
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-US,en;q=0.9
+Connection: close
+
+------WebKitFormBoundaryu0MQXosZb2ERBSG0
+Content-Disposition: form-data; name="fileField"; filename="GS305E_V1.0.0.16.bin"
+Content-Type: application/octet-stream
+e5y
+(begin of uploaded fw file)
+
+
+At the current state it is unclear where "WebKitFormBoundaryu0MQXosZb2ERBSG0" is generated
+
+
+
+
+
