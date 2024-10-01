@@ -88,3 +88,9 @@ changing anything after 0x13 (after reserved) isnt noticed while uploading
 				may be different using other operation systems and browsers
 			tested with both headers: length is header independent
 		file length gets checked befor checksum
+----------------------------------------------------------
+testing to brutefoce valid headers
+i'll be using:
+
+65 35 89 79 00 0A 51 28 00 00 XX XX 03 66 66 66
+
