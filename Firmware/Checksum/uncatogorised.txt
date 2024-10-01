@@ -20,3 +20,69 @@
 There 2 protected region(s).
     Portected region 0: 0x000000-0x001000
     Portected region 1: 0x004000-0x01c000
+
+
+magic_number: 0x65358979 = 1690900793
+length: 0x000a5128 = 676136
+header_chksum: 0x000005de = 1502
+payload_chksum: 0x0381b8da = 58851418
+reserved: 0x332255ff = 857870335
+
+---------------------------------------------------------------------
+reserved not listed cause it is in an other line and dosnt change
+1.v1.0.0.11
+2.v1.0.0.16
+
+| MagicNum |   length  |headerCkSum|payloadCkSum
+65 35 89 79 00 0A 46 E0 00 00 06 83 03 90 EC 8F
+65 35 89 79 00 0A 51 28 00 00 05 DE 03 81 B8 DA
+
+magic_number is constand change results in unsuccsesfull uploade
+	An error occurred while updating the file. Select a valid file and try again.
+
+chainging length (value) results in unsucsesfull uploade
+	An error occurred while updating the file. Select a valid file and try again.
+
+chainging header_chksum results in unsuccsesfull uploade
+	An error occurred while updating the file. Select a valid file and try again.
+
+chainging payload_chksum results in unsuccsesfull uploade
+	An error occurred while updating the file. Select a valid file and try again.
+
+chainging reserved results in unsuccsesfull uploade
+	An error occurred while updating the file. Select a valid file and try again.
+
+changing anything after 0x13 (after reserved) isnt noticed while uploading
+	conclusion: the first 20 bytes of the file get checked while uploading
+	followup tests:
+		uploading random picture: rejectet
+		uploading file only containing the 20 bytes: instand rejection with error:
+			192.168.0.239 didn’t send any data.
+		 		i thought this would work :(
+		uploading firmware using the 20 bytes of the old one: succsessful
+			after printing header i noticed it dosn't get updated
+		resize the 20 bytes file and added a lot of 0's: successful
+			conclusion certan file length requiert
+			tested lengths:
+				0x1400 successful
+				0x1000 successful
+				0x0420 successful
+				0x0100 not successful
+				0x0200 not successful
+				0x0300 successsful
+				0x0250 not successful
+				0x0280 not successful
+				0x0290 not successful
+				0x02ff successful
+				0x02f0 successful
+				0x02a0 not successful
+				0x02b0 successful
+				0x02af successful
+				0x02a8 not successful
+				0x02a9 not successful
+				0x02ab not successful
+				0x02ad not successful
+				0x02ae successful
+			conclusion file has to be longer than 0x2AD bytes and so 
+			at least 0x2AE bytes long
+			tested with both headers: length is header independent

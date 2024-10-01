@@ -31,6 +31,29 @@ e5y
 At the current state it is unclear where "WebKitFormBoundaryu0MQXosZb2ERBSG0" is generated
 
 
+Current state:
 
 
+in tree.js there is
+	str += CreateButtons('button','Apply','submitForm()','btn_Apply','on');
 
+and for submitForm() there is
+	function submitForm()
+	{
+	var form1=window.frames['maincontent'].document.forms[0];
+	var ip = window.frames['maincontent'].document.getElementById("Ip_Address");
+	if(checkIPv4Address(ip) == 0)
+	{
+	alert("IP address: " + ip + " is not a valid IP address.")
+	ip.value="";
+	ip.focus();
+	return;
+	}
+	form1.submit();
+	}
+
+for checkIPv4Address to be true i can use checkIPv4Address({value:"0.0.0.0"})
+
+ok i have no clue 
+
+just did some test and research and the WebKitFormBoundary is completly irrelevant(also for the checksum)
