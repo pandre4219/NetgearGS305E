@@ -85,4 +85,6 @@ changing anything after 0x13 (after reserved) isnt noticed while uploading
 				0x02ae successful
 			conclusion file has to be longer than 0x2AD bytes and so 
 			at least 0x2AE bytes long
+				may be different using other operation systems and browsers
 			tested with both headers: length is header independent
+		file length gets checked befor checksum
