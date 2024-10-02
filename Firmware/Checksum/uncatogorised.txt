@@ -92,5 +92,9 @@ changing anything after 0x13 (after reserved) isnt noticed while uploading
 testing to brutefoce valid headers
 i'll be using:
 
-65 35 89 79 00 0A 51 28 00 00 XX XX 03 66 66 66
+65 35 89 79 00 0A 51 28 XX XX XX XX 03 66 66 66
 
+Codeing the script took way longer than i thought
+ok so lets get the hash
+2m and 26.002s later and the hash is 0x000004fd
+65 35 89 79 00 0A 51 28 00 00 04 FD 03 66 66 66
