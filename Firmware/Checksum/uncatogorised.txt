@@ -98,3 +98,24 @@ Codeing the script took way longer than i thought
 ok so lets get the hash
 2m and 26.002s later and the hash is 0x000004fd
 65 35 89 79 00 0A 51 28 00 00 04 FD 03 66 66 66
+
+second try:
+65 35 89 79 00 0A 51 28 XX XX XX XX 00 00 00 00
+1m50.191s 0x000003c8
+65 35 89 79 00 0A 51 28 00 00 03 c8 00 00 00 00
+						bruteforce
+base						time		header_chksum
+65 35 89 79 00 0A 51 28 XX XX XX XX 03 66 66 66	2m26.002s	0x000004fd
+65 35 89 79 00 0A 51 28 XX XX XX XX 00 00 00 00	1m50.191s 	0x000003c8
+65 35 89 79 00 00 00 00 XX XX XX XX 00 00 00 00 1m36.032s	0x00000345 
+00 00 00 00 00 00 00 00 XX XX XX XX 00 00 00 00 172m49.967s	rq at 0x00018465
+65 35 89 79 00 00 00 01 XX XX XX XX 00 00 00 00 0m7.675s	0x00000346
+65 35 89 79 00 00 00 10 XX XX XX XX 00 00 00 00 0m9.137s	0x00000355
+65 35 89 79 00 00 01 00 XX XX XX XX 00 00 00 00 0m7.539s	0x00000346
+65 35 89 79 00 01 00 00 XX XX XX XX 00 00 00 00 0m8.587s	0x00000346
+
+header_chksum gets calculated by adding every byte of magic_number, length, payload_chksum and reserved
+magic_number seams to not be changeable
+chksum for only magic_number is 0x0000019C
+
+same probably applies for payload_chksum
