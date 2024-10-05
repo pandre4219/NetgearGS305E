@@ -1,0 +1,21 @@
+i made a script to calculate the checksum unfortunatly it dosnt apply to the whole fw
+it is posible to delete(fill with 0x00) and change parts of the fw by calculating the 
+checksum of the affected part and substract/add them from the original checksum. to do 
+that just save the deleted part as a file and use the script substract calculated chksum
+from original checksum and if for added stuff just add the checksums. For a update via 
+Web fw updater the header and header checksum have to be correct. For that just save the
+header(first 20 bytes) as a file (containing magic_number, length, NOT header_chksum 
+(just fill with 0x00 or leave it out), payload_chksum and reserved) and calculate then 
+the header checksum can be calculated by the script. The file i uploaded here 
+(GS305E_V1.0.0.16test.bin) was a test how much i could strip the fw with the checksum 
+still beeing checkt as correct. Do     NOT    uploade this fw if you dont have console
+access to the switch, it will accept the fw and get bricked. If you do have console access
+and for what ever reason decided to flash the fw you will see that the switch is in an 
+bootloop you just have to press ESC for the switch to enter download mode and the you
+can install a new fw.
+
+
+---------------checksum script-----------------
+the script needs xxd to run 
+it takes one file as input and calculates the checksum of the file
+may update the script in the future 
